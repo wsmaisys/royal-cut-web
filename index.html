@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-root-prefix="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Cuts Phaltan | Fresh Chicken &amp; Fish Trader — Phaltan, Maharashtra</title>
+  <meta
+    name="description"
+    content="Phaltan's cinema-grade retail and wholesale fresh chicken, authentic village Gavran poultry, and Ratnagiri coastal &amp; Veer Dam fish trader. 5:30 AM daily cold-chain batch."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Playfair+Display:ital,wght@0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Royal Cuts Phaltan",
+    "description": "Fresh Chicken and Fish Trader in Phaltan, Maharashtra. Retail & HoReCa Wholesale.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 4 & 5, Cold-Chain Market Hub, Ring Road Corner, Near Main Market Yard",
+      "addressLocality": "Phaltan",
+      "addressRegion": "Maharashtra",
+      "postalCode": "415523",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-98765-43210",
+    "servesCuisine": ["Fresh Poultry", "Country Chicken", "Coastal Seafood", "Freshwater Fish"]
+  }
+  </script>
+</head>
+<body data-page="home" data-sequence="home" data-theme="chicken">
+  <a href="#main-content" class="skip-link" data-en="Skip to main content" data-mr="मुख्य मजकुराकडे जा">Skip to main content</a>
+
+  <!-- Shared Navigation Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-wrap" aria-label="Royal Cuts Phaltan Home">
+      <div class="brand-crest" aria-hidden="true">RC</div>
+      <div class="brand-titles">
+        <span class="brand-name" data-en="ROYAL CUTS PHALTAN" data-mr="रॉयल कट्स फलटण">ROYAL CUTS PHALTAN</span>
+        <span class="brand-sub" data-en="Phaltan • Chicken &amp; Fish Trader" data-mr="फलटण • ताजे चिकन आणि मासे ट्रेडर">Phaltan • Chicken &amp; Fish Trader</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary Navigation">
+      <a href="index.html" class="nav-link" aria-current="page" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+      <a href="chicken.html" class="nav-link" data-en="Chicken" data-mr="चिकन">Chicken</a>
+      <a href="fish.html" class="nav-link" data-en="Fish" data-mr="मासे">Fish</a>
+      <a href="quality.html" class="nav-link" data-en="Quality &amp; Licences" data-mr="दर्जा व परवाने">Quality &amp; Licences</a>
+      <a href="contact.html" class="nav-link" data-en="Contact" data-mr="संपर्क">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="lang-toggle" id="lang-toggle-btn" aria-label="Switch language">
+        <span class="lang-pill active" data-lang-pill="en">EN</span>
+        <span class="lang-pill" data-lang-pill="mr">मराठी</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- SCREEN 1: Short Hero Cinematic Teaser Sequence -->
+    <section class="scroll-sequence-runway home-teaser-runway" id="scroll-runway" aria-label="Cinematic Teaser Sequence">
+      <div class="sticky-stage">
+        <div class="letterbox-bar letterbox-top">
+          <span data-en="2.39:1 ANAMORPHIC • PHALTAN COLD-CHAIN ARCHIVE" data-mr="२.३९:१ सिनेमॅटिक • फलटण कोल्ड-चेन">2.39:1 ANAMORPHIC • PHALTAN COLD-CHAIN ARCHIVE</span>
+          <span data-en="CHICKEN &amp; FISH SPECIALIST" data-mr="चिकन आणि मासे स्पेशालिस्ट">CHICKEN &amp; FISH SPECIALIST</span>
+        </div>
+
+        <canvas
+          id="sequence-canvas"
+          role="img"
+          aria-label="Split-screen 3D animated cinema frame showing golden sunrise over Phaltan poultry farms on the left and deep teal underwater silver fish on the right."
+        ></canvas>
+        <div id="canvas-live-alt" class="sr-only" aria-live="polite"></div>
+
+        <div class="film-grain-overlay" aria-hidden="true"></div>
+        <div class="vignette-overlay" aria-hidden="true"></div>
+
+        <!-- Branded Progressive Loader (First 10 Frames) -->
+        <div class="cinema-loader" id="cinema-loader" role="status" aria-live="polite">
+          <div class="loader-reel-ring" aria-hidden="true"></div>
+          <span id="loader-status-text" style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;" data-en="Loading 35mm Cinema Reel…" data-mr="सिनेमा रील लोड होत आहे…">Loading 35mm Cinema Reel…</span>
+          <div class="loader-bar-track">
+            <div class="loader-bar-fill" id="loader-bar-fill"></div>
+          </div>
+        </div>
+
+        <!-- Dynamic Scene Caption Overlay -->
+        <div class="scene-overlays-layer" id="scene-overlays-layer"></div>
+
+        <!-- Film-Strip Edge Progress Indicator -->
+        <aside class="film-strip-rail" aria-label="Film Strip Progress">
+          <span class="film-strip-title" data-en="REEL 00 • TEASER" data-mr="रील ०० • टीझर">REEL 00 • TEASER</span>
+          <div class="film-sprocket-list" id="film-sprocket-list"></div>
+          <span class="film-strip-readout" id="film-strip-readout">001/036</span>
+        </aside>
+
+        <div class="letterbox-bar letterbox-bottom">
+          <span data-en="SCROLL TO SCRUB REEL OR CHOOSE A STORY BELOW" data-mr="खालील दोन चित्रपटांपैकी एक निवडा">SCROLL TO SCRUB REEL OR CHOOSE A STORY BELOW</span>
+          <span>0°C – 2°C LIVE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: Two Large Split Story Portals ("Chicken" & "Fish") + Live Stock Board -->
+    <section class="content-section" id="story-portals">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker" data-en="Select Your Feature Presentation • दोन स्वतंत्र चित्रपट" data-mr="तुमचा विभाग निवडा • दोन स्वतंत्र स्क्रोल स्टोरीज">Select Your Feature Presentation • दोन स्वतंत्र चित्रपट</div>
+          <h1 class="section-title" data-en="Two Worlds of Craft. Zero Compromise." data-mr="दोन अस्सल चवींचे विश्व. दर्जाशी कोणतीही तडजोड नाही.">Two Worlds of Craft. Zero Compromise.</h1>
+        </div>
+        <p class="section-desc" data-en="We trade exclusively in two specialties: morning farm-fresh Chicken and ice-chain Fish. Step into each scroll-scrubbed film to see how your order travels." data-mr="आम्ही फक्त दोनच प्रकारांमध्ये व्यापार करतो: पहाटेचे ताजे चिकन आणि क्रिस्टल बर्फातील ताजे मासे. प्रत्येकाची स्वतंत्र स्टोरी पाहण्यासाठी खाली क्लिक करा.">
+          We trade exclusively in two specialties: morning farm-fresh Chicken and ice-chain Fish. Step into each scroll-scrubbed film to see how your order travels.
+        </p>
+      </div>
+
+      <div class="split-portals-grid">
+        <!-- Portal 1: /chicken -->
+        <a href="chicken.html" class="portal-card portal-chicken">
+          <img
+            src="assets/hero-chicken.jpg"
+            alt="Golden farm-fresh chicken and Gavran poultry cuts in Phaltan"
+            class="portal-card-bg"
+            loading="lazy"
+            width="800"
+            height="520"
+          />
+          <div class="portal-content">
+            <span class="portal-film-tag" data-en="FILM I • FARM TO TABLE (6 SCENES)" data-mr="चित्रपट १ • फार्म ते ताट (६ दृश्ये)">FILM I • FARM TO TABLE (6 SCENES)</span>
+            <h2 class="portal-title" data-en="Chicken" data-mr="ताजे चिकन व गावरान">Chicken</h2>
+            <p class="portal-desc" data-en="From a golden Phaltan sunrise and a strutting country bird to our 2°C stainless-steel studio counter. Broiler curry cuts, pure village Gavran, and zero-bone fillets." data-mr="फलटणच्या सोनेरी पहाटेपासून ते आमच्या २°C स्टेनलेस-स्टील स्टुडिओपर्यंतचा प्रवास. ब्रॉयलर करी कट, अस्सल गावरान आणि बोनलेस फिलेट्स.">
+              From a golden Phaltan sunrise and a strutting country bird to our 2°C stainless-steel studio counter. Broiler curry cuts, pure village Gavran, and zero-bone fillets.
+            </p>
+            <span class="portal-cta" data-en="Watch 'Farm to Table' &amp; Order Chicken →" data-mr="'फार्म ते ताट' स्टोरी पाहा व चिकन ऑर्डर करा →">Watch 'Farm to Table' &amp; Order Chicken →</span>
+          </div>
+        </a>
+
+        <!-- Portal 2: /fish -->
+        <a href="fish.html" class="portal-card portal-fish">
+          <img
+            src="assets/hero-seafood.jpg"
+            alt="Fresh Ratnagiri Surmai, Silver Pomfret and Veer Dam fish on crystal ice"
+            class="portal-card-bg"
+            loading="lazy"
+            width="800"
+            height="520"
+          />
+          <div class="portal-content">
+            <span class="portal-film-tag" data-en="FILM II • WATER TO TABLE (6 SCENES)" data-mr="चित्रपट २ • पाण्यापासून ताटापर्यंत (६ दृश्ये)">FILM II • WATER TO TABLE (6 SCENES)</span>
+            <h2 class="portal-title" data-en="Fish" data-mr="समुद्री व वीर डॅम मासे">Fish</h2>
+            <p class="portal-desc" data-en="Dive beneath cathedral light rays with a cheeky silver fish before surfacing into our 0°C crystal ice-chain. Ratnagiri Surmai, Silver Pomfret, Prawns &amp; Veer Dam catch." data-mr="पाण्याखालील सोनेरी किरणांपासून ते ०°C क्रिस्टल आईस-चेनपर्यंतचा प्रवास. रत्नागिरी सुरमई, सिल्व्हर पापलेट, कोळंबी आणि वीर डॅम मासे.">
+              Dive beneath cathedral light rays with a cheeky silver fish before surfacing into our 0°C crystal ice-chain. Ratnagiri Surmai, Silver Pomfret, Prawns &amp; Veer Dam catch.
+            </p>
+            <span class="portal-cta" data-en="Watch 'Water to Table' &amp; Order Fish →" data-mr="'पाण्यापासून ताटापर्यंत' स्टोरी पाहा व मासे ऑर्डर करा →">Watch 'Water to Table' &amp; Order Fish →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Live "Today's Catch / Today's Fresh Stock" Board (JSON-Editable) -->
+    <section class="content-section" id="live-stock-section" style="padding-top: 1rem;">
+      <div class="stock-board-card">
+        <div class="stock-board-header">
+          <div>
+            <div class="section-kicker" style="margin-bottom: 0.2rem;" data-en="Live JSON Feed • data/stock.json" data-mr="आजचा ताजा साठा व बाजारभाव">Live JSON Feed • data/stock.json</div>
+            <h2 style="font-family: var(--font-serif); font-size: 1.55rem;" data-en="Today’s Catch &amp; Fresh Stock Board" data-mr="आजचे ताजे चिकन व मासे दरफलक">Today’s Catch &amp; Fresh Stock Board</h2>
+          </div>
+          <div class="live-pulse-badge">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="stock-last-updated">Updated Today • 5:30 AM Morning Dispatch Batch</span>
+          </div>
+        </div>
+        <div class="stock-table-wrap">
+          <table class="stock-table" aria-label="Today's Catch and Fresh Stock Rates">
+            <thead>
+              <tr>
+                <th data-en="Cut / Variety (Chicken &amp; Fish)" data-mr="प्रकार (चिकन आणि मासे)">Cut / Variety (Chicken &amp; Fish)</th>
+                <th data-en="Availability" data-mr="उपलब्धता">Availability</th>
+                <th data-en="Retail Rate (per kg)" data-mr="किरकोळ दर (प्रति किलो)">Retail Rate (per kg)</th>
+                <th data-en="Wholesale (10 kg+)" data-mr="होलसेल दर (१० किलो+)">Wholesale (10 kg+)</th>
+              </tr>
+            </thead>
+            <tbody id="live-stock-tbody" data-stock-category="all"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: Three-Point Trust Strip + WhatsApp CTA -->
+    <section class="content-section" id="trust-strip-section" style="padding-top: 1rem;">
+      <div class="section-header" style="margin-bottom: 1.5rem;">
+        <div>
+          <div class="section-kicker" data-en="The Royal Cuts Standard • आमची हमी" data-mr="रॉयल कट्स दर्जा • तीन तत्त्वे">The Royal Cuts Standard • आमची हमी</div>
+          <h2 class="section-title" data-en="Three Promises on Every Order" data-mr="प्रत्येक ऑर्डरसोबत तीन ठोस वचने">Three Promises on Every Order</h2>
+        </div>
+        <a href="quality.html" class="btn-primary-sm" data-en="Inspect Licences &amp; Cold Chain →" data-mr="परवाने व कोल्ड-चेन पाहा →">Inspect Licences &amp; Cold Chain →</a>
+      </div>
+
+      <div class="trust-strip">
+        <article class="trust-card">
+          <span class="trust-num">01 / FRESH DAILY</span>
+          <h3 data-en="5:30 AM Morning Harvest" data-mr="पहाटे ५:३० चा ताजा साठा">5:30 AM Morning Harvest</h3>
+          <p data-en="Never frozen, never carried over. Poultry arrives at dawn from bio-secure Phaltan farms alongside overnight Ratnagiri port &amp; morning Veer Dam fish." data-mr="कधीही फ्रोजन न केलेला ताजा माल. फलटणच्या फार्ममधून पहाटेचे चिकन आणि रत्नागिरी बंदर व वीर धरणातील ताजे मासे.">
+            Never frozen, never carried over. Poultry arrives at dawn from bio-secure Phaltan farms alongside overnight Ratnagiri port &amp; morning Veer Dam fish.
+          </p>
+        </article>
+
+        <article class="trust-card">
+          <span class="trust-num">02 / HYGIENIC COLD CHAIN</span>
+          <h3 data-en="0°C–2°C RO-Washed Studio" data-mr="०°C–२°C स्वच्छ RO वॉश">0°C–2°C RO-Washed Studio</h3>
+          <p data-en="Dressed on food-grade 304 stainless steel, washed exclusively in purified RO water, and packed in chemical-free crystal ice or leak-proof chilled trays." data-mr="३०४ फूड-ग्रेड स्टेनलेस स्टीलवर कटिंग, शुद्ध RO पाण्याने वॉश आणि केमिकल-फ्री बर्फात किंवा लीक-प्रूफ ट्रेमध्ये पॅकिंग.">
+            Dressed on food-grade 304 stainless steel, washed exclusively in purified RO water, and packed in chemical-free crystal ice or leak-proof chilled trays.
+          </p>
+        </article>
+
+        <article class="trust-card">
+          <span class="trust-num">03 / LICENSED &amp; TRACEABLE</span>
+          <h3 data-en="FSSAI Certified &amp; Net-Weight Billed" data-mr="FSSAI प्रमाणित व निव्वळ वजन">FSSAI Certified &amp; Net-Weight Billed</h3>
+          <p data-en="Full FSSAI retail &amp; wholesale compliance, daily veterinary &amp; port batch logs, and strict drained net-weight billing with zero ice-glaze markups." data-mr="संपूर्ण FSSAI परवानाधारक, व्हेटर्नरी तज्ज्ञांकडून तपासणी आणि बर्फाचे वजन न धरता १००% निव्वळ साफ वजनाचेच बिलिंग.">
+            Full FSSAI retail &amp; wholesale compliance, daily veterinary &amp; port batch logs, and strict drained net-weight billing with zero ice-glaze markups.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky WhatsApp Order Button -->
+  <a
+    href="https://wa.me/919876543210"
+    target="_blank"
+    rel="noopener"
+    class="sticky-whatsapp-btn"
+    id="sticky-whatsapp-btn"
+    aria-label="Order now on WhatsApp"
+  >
+    <span aria-hidden="true">🟢</span>
+    <span id="sticky-whatsapp-label" data-en="Order Now on WhatsApp" data-mr="व्हॉट्सॲपवर ऑर्डर करा">Order Now on WhatsApp</span>
+  </a>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4 data-en="Royal Cuts Phaltan" data-mr="रॉयल कट्स फलटण">Royal Cuts Phaltan</h4>
+        <p data-en="Phaltan’s flagship fresh Chicken &amp; Fish trader serving home kitchens, hotels, and caterers across the Satara–Baramati–Pune corridor." data-mr="फलटणमधील अग्रगण्य ताजे चिकन आणि मासे ट्रेडर. घरगुती ग्राहक, हॉटेल्स आणि केटरर्ससाठी विश्वसनीय पुरवठा.">
+          Phaltan’s flagship fresh Chicken &amp; Fish trader serving home kitchens, hotels, and caterers across the Satara–Baramati–Pune corridor.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Cinema Pages" data-mr="वेबसाईट विभाग">Cinema Pages</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home (Overview)" data-mr="मुख्यपृष्ठ">Home (Overview)</a></li>
+          <li><a href="chicken.html" data-en="Film I: Farm to Table (Chicken)" data-mr="चित्रपट १: फार्म ते ताट (चिकन)">Film I: Farm to Table (Chicken)</a></li>
+          <li><a href="fish.html" data-en="Film II: Water to Table (Fish)" data-mr="चित्रपट २: पाण्यापासून ताटापर्यंत (मासे)">Film II: Water to Table (Fish)</a></li>
+          <li><a href="quality.html" data-en="Quality, Cold Chain &amp; FSSAI" data-mr="दर्जा, कोल्ड-चेन व परवाने">Quality, Cold Chain &amp; FSSAI</a></li>
+          <li><a href="contact.html" data-en="Contact &amp; Location Map" data-mr="संपर्क आणि पत्ता">Contact &amp; Location Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Phaltan Hub &amp; Timings" data-mr="पत्ता आणि वेळ">Phaltan Hub &amp; Timings</h4>
+        <p data-en="Shop No. 4 &amp; 5, Ring Road Corner, Near Main Market Yard, Phaltan – 415523" data-mr="शॉप क्र. ४ व ५, रिंग रोड कॉर्नर, मेन मार्केट यार्ड जवळ, फलटण – ४१५५२३">
+          Shop No. 4 &amp; 5, Ring Road Corner, Near Main Market Yard, Phaltan – 415523
+        </p>
+        <p data-en="Morning Batch: 5:30 AM – 1:30 PM | Evening: 4:00 PM – 9:00 PM" data-mr="सकाळची वेळ: ५:३० ते १:३० | सायंकाळी: ४:०० ते ९:००">
+          Morning Batch: 5:30 AM – 1:30 PM | Evening: 4:00 PM – 9:00 PM
+        </p>
+        <p style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-muted);">
+          FSSAI: 21524189000412 / 11524036000198 [PLACEHOLDER]
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional GSAP + ScrollTrigger (Degrades gracefully to built-in native scrub loop if offline) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="sequence-config.js"></script>
+  <script src="scroll-sequence.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+  "lastUpdatedEn": "Updated Today • 5:30 AM Morning Dispatch Batch",
+  "lastUpdatedMr": "आजचे ताजे दर • पहाटे ५:३० चा मॉर्निंग बॅच",
+  "marketLocationEn": "Main Market Yard & Ring Road Cold-Chain Hub, Phaltan",
+  "marketLocationMr": "मेन मार्केट यार्ड आणि रिंग रोड कोल्ड-चेन हब, फलटण",
+  "items": [
+    {
+      "id": "chk-broiler-curry",
+      "category": "chicken",
+      "nameEn": "Farm-Fresh Broiler Chicken (Skinless Curry Cut)",
+      "nameMr": "फार्म-फ्रेश ब्रॉयलर चिकन (स्किनलेस करी कट)",
+      "originEn": "Phaltan & Baramati Bio-Secure Farms",
+      "originMr": "फलटण व बारामती बायो-सिक्युअर फार्म",
+      "status": "available",
+      "statusLabelEn": "In Stock • 5:30 AM Batch",
+      "statusLabelMr": "उपलब्ध • पहाटे ५:३० बॅच",
+      "ratePerKg": 220,
+      "wholesaleRatePerKg": 180,
+      "unit": "kg"
+    },
+    {
+      "id": "chk-gavran",
+      "category": "chicken",
+      "nameEn": "Authentic Phaltan Gavran (Desi Country Chicken)",
+      "nameMr": "अस्सल फलटण गावरान (देशी चिकन — रस्सा स्पेशल)",
+      "originEn": "Phaltan Taluka Free-Range",
+      "originMr": "फलटण तालुका मुक्त संचार गावरान",
+      "status": "limited",
+      "statusLabelEn": "Limited Morning Stock",
+      "statusLabelMr": "मर्यादित सकाळचा साठा",
+      "ratePerKg": 480,
+      "wholesaleRatePerKg": 410,
+      "unit": "kg"
+    },
+    {
+      "id": "chk-boneless-breast",
+      "category": "chicken",
+      "nameEn": "Chef-Grade Chicken Breast & Tandoori Tikka Boneless",
+      "nameMr": "शेफ-ग्रेड चिकन बोनलेस ब्रेस्ट व तंदुरी टिक्का कट",
+      "originEn": "2°C Chilled Studio Trim",
+      "originMr": "२°C चिल्ड स्टुडिओ कट",
+      "status": "available",
+      "statusLabelEn": "In Stock • Freshly Trimmed",
+      "statusLabelMr": "उपलब्ध • ताजे बोनलेस",
+      "ratePerKg": 330,
+      "wholesaleRatePerKg": 280,
+      "unit": "kg"
+    },
+    {
+      "id": "fsh-surmai-steaks",
+      "category": "fish",
+      "nameEn": "Ratnagiri Kingfish (Surmai) Center Fry Steaks",
+      "nameMr": "रत्नागिरी सुरमई गोल काप (तवा फ्राय स्पेशल)",
+      "originEn": "Ratnagiri Port Insulated Ice-Chain",
+      "originMr": "रत्नागिरी बंदर थेट आईस-चेन",
+      "status": "available",
+      "statusLabelEn": "Fresh Coastal Arrival",
+      "statusLabelMr": "कोकण किनारा ताजी आवक",
+      "ratePerKg": 740,
+      "wholesaleRatePerKg": 640,
+      "unit": "kg"
+    },
+    {
+      "id": "fsh-silver-pomfret",
+      "category": "fish",
+      "nameEn": "Export-Grade Silver Pomfret (Cleaned with Masala Slits)",
+      "nameMr": "एक्सपोर्ट ग्रेड सिल्व्हर पापलेट (साफ केलेले)",
+      "originEn": "Konkan Coastal Express",
+      "originMr": "कोकण कोस्टल एक्सप्रेस",
+      "status": "limited",
+      "statusLabelEn": "Limited Coastal Catch",
+      "statusLabelMr": "मर्यादित सागरी साठा",
+      "ratePerKg": null,
+      "wholesaleRatePerKg": null,
+      "unit": "kg"
+    },
+    {
+      "id": "fsh-veer-dam-katla",
+      "category": "fish",
+      "nameEn": "Veer Dam & Nira River Fresh Rohu / Katla Curry Cut",
+      "nameMr": "वीर डॅम व निरा नदी ताजे रोहू / कातला करी कट",
+      "originEn": "Veer Dam Same-Morning Catch",
+      "originMr": "वीर धरण आजची ताजी पकड",
+      "status": "available",
+      "statusLabelEn": "In Stock • Descaled & Cleaned",
+      "statusLabelMr": "उपलब्ध • खवले काढून साफ",
+      "ratePerKg": 240,
+      "wholesaleRatePerKg": 185,
+      "unit": "kg"
+    }
+  ]
+}
+
